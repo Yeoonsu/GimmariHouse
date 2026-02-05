@@ -46,3 +46,15 @@ hr {
     border-top: 1px solid #eee;
     margin: 50px 0;
 }
+
+/* 글의 호흡을 살리는 여백 설정 */
+.post-detail p {
+    margin-bottom: 1.8rem; /* 문장 사이의 숨구멍 */
+    line-height: 1.8;      /* 줄 간격 */
+}
+
+/* white-space 설정을 통해 혹시 모를 줄바꿈 무시 방지 */
+.post-detail {
+    white-space: normal; 
+    word-break: keep-all; /* 한글 단어가 중간에 잘리지 않게 함 */
+}
