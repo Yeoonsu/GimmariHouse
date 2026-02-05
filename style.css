@@ -1,79 +1,48 @@
-/* 1. 기본 초기화 및 폰트 설정 */
+/* 기본 body 스타일 수정 */
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.8; /* 줄 간격을 넓게 잡아 가독성 확보 */
-    font-family: 'Georgia', 'Times New Roman', serif; /* 에세이 느낌의 서체 */
-    color: #333;
-    background-color: #fdfdfd; /* 눈이 편안한 미색 배경 */
+    line-height: 1.8;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2c2c2c;
+    background-color: #fafafa; /* 아주 연한 회색으로 고급스러운 종이 느낌 */
 }
 
-/* 2. 레이아웃: 본문을 중앙으로 모으고 폭 제한 */
 .container {
-    max-width: 700px; /* 에세이 읽기에 가장 쾌적한 폭 */
-    margin: 60px auto;
-    padding: 0 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 80px 25px;
 }
 
-/* 3. 제목 스타일링 */
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-top: 40px;
-    color: #444;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 8px;
-}
-
-/* 4. 메타 정보 (날짜, 작성자 등) */
-.meta {
-    font-family: 'Helvetica', 'Arial', sans-serif; /* 본문과 대비되는 Sans-serif */
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 40px;
-}
-
-/* 5. 본문 문단 스타일 */
-p {
-    margin-bottom: 1.5rem;
-    text-align: justify; /* 양쪽 정렬로 깔끔한 느낌 */
-}
-
-/* 6. 인용구 (Blockquote) */
-blockquote {
-    margin: 30px 0;
-    padding-left: 20px;
-    border-left: 3px solid #ddd;
-    font-style: italic;
-    color: #555;
-}
-
-/* 7. 링크 스타일 */
+/* 링크 효과: 부드러운 컬러 변경 */
 a {
-    color: #333;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    transition: color 0.2s;
+    color: #2c2c2c;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #007bff;
+    color: #777;
 }
 
-/* 8. 목록(List) 스타일 */
-ul, ol {
-    margin-bottom: 1.5rem;
-    padding-left: 20px;
+/* 메타 정보: 더 작고 간결하게 */
+.meta {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-li {
-    margin-bottom: 0.5rem;
+/* 상세페이지 본문 스타일 */
+.content p {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    word-break: keep-all;
+}
+
+/* 구분선 */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 50px 0;
 }
