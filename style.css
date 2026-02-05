@@ -8,10 +8,46 @@ body {
     background-color: #fafafa; /* 아주 연한 회색으로 고급스러운 종이 느낌 */
 }
 
+/* 글 전체를 감싸는 컨테이너 */
 .container {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 80px 25px;
+    max-width: 900px;      /* 너무 넓게 퍼지지 않도록 제한 */
+    margin-left: 15%;      /* 화면 왼쪽에서 15%만큼 띄움 (비대칭 여백) */
+    margin-right: auto;    
+    padding: 0 40px;       /* 모바일용 최소 여백 */
+    text-align: left;      /* 좌측 정렬 고수 */
+}
+
+.container {
+    /* 1. 글의 최대 너비를 제한 (이게 있어야 우측 여백이 생깁니다) */
+    max-width: 700px;      
+
+    /* 2. 좌측 여백을 고정하지 않고 화면 비율에 맞게 설정 (예: 20%) */
+    margin-left: 20%;      
+
+    /* 3. 우측 여백은 자동으로 남겨둠 */
+    margin-right: auto;    
+
+    /* 4. 모바일 대응: 화면이 작아지면 여백을 줄임 */
+    padding: 0 30px;       
+    
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;    /* 왼쪽 여백 삭제 */
+        padding: 0 20px;   /* 양옆에 살짝만 여백 부여 */
+        max-width: 100%;   /* 화면 전체 사용 */
+    }
+}
+
+.post-content {
+    line-height: 2;        /* 여백만큼 중요한 게 줄 간격입니다 */
+    letter-spacing: -0.01em; /* 글자 사이를 살짝 좁혀서 단단한 느낌 부여 */
+}
+/* 문단 사이의 여백 */
+.post-content p {
+    margin-bottom: 2rem;
 }
 
 /* 링크 효과: 부드러운 컬러 변경 */
