@@ -1,34 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Index</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main>
-    <h1>Drafts</h1>
-    <p><small>Draft</small></p>
+    <nav class="container" style="margin-bottom: 0; padding-top: 40px;">
+        <a href="index.html" style="text-decoration: none; font-weight: bold; font-family: sans-serif;">DRAFT BOARD</a>
+    </nav>
 
-    <ul>
-      <li>
-        <a href="post-1.html">
-          <strong>test</strong>
-          <small>2026.02.05</small>
-        </a>
-      </li>
-    </ul>
+    <main>
+        <div class="container">
+    <header style="margin-bottom: 60px;">
+        <h1 style="font-size: 3rem;">Essays & Thoughts</h1>
+        <p class="meta">A collection of drafts and polished writings.</p>
+    </header>
 
-    <footer>
-      © 2026 Mary Kim. All rights reserved. 
-      All texts are drafts.
+    <section class="post-list">
+        
+            <article style="margin-bottom: 40px;">
+                <div class="meta" style="margin-bottom: 5px;">2026-02-05</div>
+                <h2 style="margin-top: 0; border: none;">
+                    <a href="post-1.html" style="text-decoration: none;">test</a>
+                </h2>
+                <p style="color: #666; font-size: 0.95rem;"></p>
+            </article>
+        
+    </section>
+</div>
+    </main>
+
+    <footer class="container" style="margin-top: 80px; font-size: 0.8rem; color: #999; font-family: sans-serif;">
+        <p>&copy; © 2026 Mary Kim. All rights reserved. Draft Essay Archive. Built with Node.js.</p>
     </footer>
-  </main>
 </body>
 </html>
